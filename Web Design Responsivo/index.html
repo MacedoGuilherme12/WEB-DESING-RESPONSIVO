@@ -7,64 +7,59 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
-      href="png-transparent-logo-contracting-photography-logo-symbol.png"
+      href="png-transparent-logo-contracting-photography-logo-symbol(1).png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="">Home</a>
-        <a href="">Serviços</a>
-        <a href="./contatos.html">Contato</a>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="">Home</a></li>
+          <li><a href="./estilos.html">Serviços</a></li>
+          <li><a href="./contatos.html">Contato</a></li>
+        </ul>
       </nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
     <main>
       <section class="sessao home">
-        <h2>Sobre Nos</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, non?
-        </p>
+        <h2>Home</h2>
+        <p>Conteúdo da seção Home</p>
       </section>
-      <section class="sessao">
-        <h2></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
-          enim sint repudiandae culpa dolorem ab officiis ullam quisquam fugit
-          officia quaerat dicta aliquam esse temporibus nemo qui amet a!
-          Voluptatem! Dolores incidunt beatae at nam, facere adipisci! Nulla
-          molestias fugit assumenda reprehenderit dignissimos doloribus
-          repellendus laboriosam provident, aut voluptas dolor corporis cumque,
-          necessitatibus ullam saepe qui non ducimus, autem mollitia. Blanditiis
-          nobis quidem repudiandae tempore sapiente mollitia laudantium dolor
-          deleniti voluptatum dolorum eaque veniam architecto fuga doloribus,
-          delectus porro cumque magni, cupiditate vero iusto odit suscipit ipsum
-          molestiae? At, veritatis. Minus in facilis assumenda modi voluptatem
-          pariatur possimus, magni nobis explicabo est suscipit neque enim ab
-          quae, nisi sint nemo optio temporibus quas nesciunt, delectus
-          accusantium. Excepturi perferendis neque natus!
-        </p>
+      <section class="sessao sobre">
+        <h2>Sobre</h2>
+        <p>Conteúdo da seção Sobre</p>
       </section>
-      <section class="sessao"></section>
       <section class="sessao contato">
-        <h2>Contato</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad ea,
-          iste recusandae dicta cum hic eos aliquid facere iure quod,
-          dignissimos quo necessitatibus. Itaque nisi ad deserunt quibusdam
-          quaerat. Eveniet nemo voluptate voluptates temporibus libero illum
-          consequuntur molestias, hic, vel laborum corporis est ex doloremque
-          commodi dolor quo inventore pariatur. Consectetur in adipisci velit
-          possimus quae, quibusdam incidunt quas. Beatae molestiae aut,
-          voluptate placeat optio officia dolorem at id asperiores
-          necessitatibus sint dignissimos, deserunt minus natus rem quasi autem
-          provident sapiente repudiandae repellendus commodi odio distinctio
-          vero sequi? Animi!
-        </p>
+        <h2>Contatos</h2>
+        <p>Conteúdo da seção Home</p>
       </section>
     </main>
     <footer>
       <p>Todos os direitos reservados @Guilherme Macedo</p>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Fechar o menu quando um link for clicado
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
