@@ -27,7 +27,6 @@ header {
   background-color: lightcoral;
 }
 .nav-menu {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,9 +90,7 @@ main {
 h2 {
   margin-top: 1em;
 }
-.hamburger {
-  display: none;
-}
+
 /* Rodapé */
 footer {
   padding: 2em;

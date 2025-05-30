@@ -32,7 +32,6 @@ header {
   background-color: lightcoral;
 }
 .nav-menu {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +135,8 @@ footer {
   }
   .hamburger {
     display: block;
+    background-color: black;
+    padding: 20px;
   }
   main {
     min-width: 95%;
@@ -143,9 +144,6 @@ footer {
   }
   body {
     padding-top: 50px;
-  }
-  header {
-    padding: 1.6em;
   }
   .sessao {
     max-width: 90%;
