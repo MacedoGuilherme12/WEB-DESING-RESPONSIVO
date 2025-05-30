@@ -16,9 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
+/* Navegação  */
 header {
   position: fixed;
   top: 0;
@@ -51,26 +52,27 @@ header {
 .nav-links a:hover {
   color: antiquewhite;
 }
+
 .hamburger {
   display: none;
   cursor: pointer;
   color: white;
   font-size: 1.5rem;
 }
-.nav-links a {
-  text-decoration: none;
-  color: white;
-}
-.nav-links a:hover {
-  color: antiquewhite;
-}
+/* Corpo e Forms */
+
 main {
   flex: 1;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 2%;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  min-width: 90%;
+  min-height: 90%;
   background-color: darksalmon;
+  gap: 5em;
+  padding: 2em 0;
 }
 
 .sessao {
@@ -109,7 +111,9 @@ textarea {
   width: 100%;
   min-height: 10em;
 }
+/* Rodape */
 footer {
+  min-width: 20%;
   padding: 2em;
   display: flex;
   justify-content: center;
