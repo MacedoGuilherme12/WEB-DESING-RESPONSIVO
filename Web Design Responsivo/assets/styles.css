@@ -1,0 +1,37 @@
+/* Corpo e Sessões */
+main {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  min-width: 90%;
+  min-height: 90%;
+  background-color: darksalmon;
+  gap: 5em;
+  padding: 2em 0;
+}
+
+.sessao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90%;
+
+  max-width: 80%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: blanchedalmond;
+  padding: 0.9em;
+}
+.home {
+  margin-top: 1.5em;
+}
+.contato {
+  margin-bottom: 1.5em;
+}
+.sessao p,
+h2 {
+  margin-top: 1em;
+}
